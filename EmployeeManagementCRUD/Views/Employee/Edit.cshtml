@@ -1,0 +1,42 @@
+﻿@model EmployeeManagementCRUD.Models.Employee
+
+<h2>Edit Employee</h2>
+
+<form asp-controller="Employee" asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label>Employee Number</label>
+        <input asp-for="EmployeeNumber" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label>Phone</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Position</label>
+        <input asp-for="Position" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Salary</label>
+        <input asp-for="Salary" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Dashboard" class="btn btn-secondary">Cancel</a>
+</form>
+

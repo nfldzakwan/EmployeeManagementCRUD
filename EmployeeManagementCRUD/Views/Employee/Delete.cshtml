@@ -1,0 +1,22 @@
+﻿@model EmployeeManagementCRUD.Models.Employee
+
+<h2>Delete Employee</h2>
+
+<h4>Confirm Data Deletion?</h4>
+
+<div>
+    <p><strong>Employee Number:</strong> @Model.EmployeeNumber</p>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Position:</strong> @Model.Position</p>
+    <p><strong>Salary:</strong> @Model.Salary</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id"/>
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+
+    <a asp-action="Dashboard" class="btn btn-secondary">Cancel</a>
+</form>
+
