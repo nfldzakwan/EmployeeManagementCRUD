@@ -10,3 +10,4 @@ namespace EmployeeManagementCRUD.Models
         public string Password {  get; set; }
     }
 }
+
